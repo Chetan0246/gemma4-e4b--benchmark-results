@@ -17,8 +17,8 @@ At time t = 0, the atom is prepared in the excited state |e> and the cavity is i
 
 payload = {
     "messages": [{"role": "user", "content": prompt}],
-    "temperature": 0.2,
-    "max_tokens": 1500
+    "temperature": 0.1,
+    "max_tokens": 3000
 }
 
 print("Dispatching GPQA Diamond-level Quantum Optics benchmark to gemma-4...", flush=True)

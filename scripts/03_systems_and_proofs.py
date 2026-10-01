@@ -30,7 +30,7 @@ for test in tests:
     payload = {
         "messages": [{"role": "user", "content": test["prompt"]}],
         "temperature": 0.2,
-        "max_tokens": 1500
+        "max_tokens": 3000
     }
     req = urllib.request.Request(URL, data=json.dumps(payload).encode("utf-8"), headers={"Content-Type": "application/json"})
     t0 = time.time()

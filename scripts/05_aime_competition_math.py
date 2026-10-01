@@ -10,7 +10,7 @@ Provide your complete step-by-step mathematical reasoning, establish the algebra
 payload = {
     "messages": [{"role": "user", "content": prompt}],
     "temperature": 0.1,
-    "max_tokens": 1500
+    "max_tokens": 3000
 }
 
 print("Running AIME Benchmark on local model...", flush=True)
