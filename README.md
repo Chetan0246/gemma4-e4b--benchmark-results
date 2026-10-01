@@ -38,12 +38,12 @@ Small language models (3B–7B) historically suffer from severe hallucination ra
 
 | Parameter | Specification |
 | :--- | :--- |
-| **System** | Lenovo ThinkPad E16 Gen 3 (Model `21STS0A600`) |
+| **Platform** | AMD Ryzen 7 Mobile Architecture |
 | **Processor (APU)** | AMD Ryzen 7 250 with Radeon 780M Graphics (8 Cores, 16 Threads) |
 | **Integrated GPU** | AMD Radeon 780M (RDNA 3, HawkPoint) |
-| **Memory** | 16 GB DDR5 (1 GB static UMA VRAM reserved in BIOS, dynamic GTT expansion) |
-| **Storage** | 512 GB Samsung PM9C1a PCIe 4.0 NVMe SSD |
-| **OS / Kernel** | Fedora Linux (Kernel 6.11+), AMDGPU driver |
+| **Memory** | 16 GB DDR5 (4 GB VRAM dedicated to iGPU in BIOS / UMA Frame Buffer) |
+| **Storage** | High-speed PCIe 4.0 NVMe SSD |
+| **OS / Kernel** | Linux (AMDGPU driver) |
 | **Inference Engine** | `llama.cpp` (`llama-server`) with Flash Attention & Q8_0 KV Cache |
 | **Model Weights** | `gemma-4-E4B-it-qat-UD-Q4_K_XL.gguf` |
 | **Context Window** | 32,768 tokens |
