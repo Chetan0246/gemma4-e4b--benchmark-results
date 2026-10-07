@@ -7,6 +7,16 @@
 
 A reproducible local inference benchmark and stress-test of **`gemma-4-E4B-it-qat-UD-Q4_K_XL`** executed on a consumer laptop APU (AMD Ryzen 7 250 with integrated Radeon 780M graphics).
 
+## How to run
+
+Download the model file referenced by the benchmark configuration, then run:
+
+```bash
+python3 scripts/01_hallucination_tests.py
+```
+
+See [Running the Suite Locally](#running-the-suite-locally) for the benchmark and remaining evaluation scripts.
+
 This repository evaluates the model's Chain-of-Thought (CoT) reasoning behaviors, prompt processing and single-token decode throughput across context depths via `llama-bench`, low-level Vulkan buffer allocations and DRM memory telemetry (baseline vs. peak runtime deltas), solutions to GPQA-style physics and systems engineering, a 10-prompt held-out evaluation suite of parameterized classic variants, and documented failure modes.
 
 All 26 raw execution traces, exact token counts, and `finish_reason` logs are tracked in [`results/raw_benchmark_runs.jsonl`](results/raw_benchmark_runs.jsonl).
